@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">SelectionWidgets</string>
+    <string name="selection">Selection</string>
+    <string name="autocompleteactivity">AutoCompleteActivity</string>
+    <string name="gridactivity">GridActivity</string>
+    <string name="simplelistactivity">SimpleListActivity</string>
+    <string name="spinneractivity">SpinnerActivity</string>
+    <string name="autocompletetextview">AutoCompleteTextView</string>
+    <string name="title">TItle</string>
+    <string name="text_size">text size</string>
+    <string name="icon">icon</string>
+    <string name="size">Size :  </string>
+</resources>

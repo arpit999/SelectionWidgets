@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.production.hometech.selectionwidgets.GridActivity">
+
+    <TextView
+        android:id="@+id/tv_selection"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Selection"
+        android:textSize="20sp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <!--1. android:numColumns spells out how many columns there are, or, if you
+supply a value of auto_fit, Android will compute the number of columns
+based on available space and the properties listed below.
+2. android:verticalSpacing and android:horizontalSpacing indicate how
+much whitespace there should be between items in the grid.
+3. android:columnWidth indicates how wide each column should be, in terms
+of some dimension value (e.g., 40dp or @dimen/grid_column_width).
+4. android:stretchMode indicates, for grids with auto_fit for
+android:numColumns, what should happen for any available space not taken up by columns or spacing — this should be columnWidth to have the
+columns take up available space or spacingWidth to have the whitespace
+between columns absorb extra space.-->
+
+    <GridView
+        android:id="@+id/gridView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:verticalSpacing="20dip"
+        android:horizontalSpacing="5dip"
+        android:numColumns="auto_fit"
+        android:columnWidth="100dip"
+        android:stretchMode="columnWidth"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_selection"
+        app:layout_constraintVertical_bias="1.0" />
+
+</android.support.constraint.ConstraintLayout>
